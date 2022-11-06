@@ -13,7 +13,7 @@ class Header {
                     </div>
                     <ul>
                         <li>Меню</li>
-                        <li><a href="/">Личный кабинет</a></li>
+                        <li><a href="./auth.html">Личный кабинет</a></li>
                         <li><a onclick="headerPage.handlerOpenShoppingPage();">Корзина</a></li>
                         <li><a href="/">Главная</a></li>
                     </ul>     
