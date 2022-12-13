@@ -41,4 +41,46 @@ const CATALOG = [
         img: 'assets/Product7.png',
         price: 1000,
     },
+    {
+        id: 'El8',
+        name: 'Квадрацикл LG',
+        img: 'assets/Product1.png',
+        price: 15500,
+    },
+    {
+        id: 'El9',
+        name: 'Лёд для кухни',
+        img: 'assets/Product2.png',
+        price: 1399,
+    },
+    {
+        id: 'El10',
+        name: 'Диван GUCCI',
+        img: 'assets/Product3.png',
+        price: 799,
+    },
+    {
+        id: 'El11',
+        name: 'Велосипед NVIDIA',
+        img: 'assets/Product4.png',
+        price: 400,
+    },
+    {
+        id: 'El12',
+        name: 'Бондана Smart TV',
+        img: 'assets/Product5.png',
+        price: 550,
+    },
+    {
+        id: 'El13',
+        name: 'Прогулка по пустыне',
+        img: 'assets/Product6.png',
+        price: 350,
+    },
+    {
+        id: 'El14',
+        name: 'Пистолет игрушечный детский',
+        img: 'assets/Product7.png',
+        price: 1000,
+    },
 ];

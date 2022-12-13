@@ -46,3 +46,28 @@
     background-image: var(--linear-gradient);
     color:aliceblue;
 }
+@media screen and (max-width: 1020px){
+    
+    .products-container{
+        display: inline-block;
+        width: 95%;
+    }
+    .products-element{
+        margin-top: 50px;
+        min-height: 200px;
+    }
+    .products-element__name{
+        font-size: var(--smaller_font-size);
+    }
+    .products-element__img{
+        height: 30%;
+        max-height: 600px;
+    }
+    .products-element__price{
+        font-size: var(--smaller_font-size);
+    }
+    .products-element__btn{
+        font-size: var(--smaller_font-size);
+        height: calc(var(--smaller_font-size)*3);
+    }
+}

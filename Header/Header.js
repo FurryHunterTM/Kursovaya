@@ -16,14 +16,17 @@ class Header {
                         <li><a href="./auth.html">Личный кабинет</a></li>
                         <li><a onclick="headerPage.handlerOpenShoppingPage();">Корзина</a></li>
                         <li><a href="/">Главная</a></li>
-                    </ul>     
+                    </ul>
+
                 </div>
                 Welcome to Some Shop
+
             </div>
         `;
 
-        ROOT_HEADER.innerHTML= html;
+        ROOT_HEADER.innerHTML = html;
     }
+    
 }
 function openMenu(){
     document.getElementById("sidebar").classList.toggle('active');

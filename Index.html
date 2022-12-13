@@ -7,16 +7,36 @@
     <link rel="icon" type="image/png" href="./assets/icon.png">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
 </head>
 <body>
+
+    <header class="main-header">
+        <div class="layers">
+            <div class="layer__header font-effect-fire">
+                <div class="layers__caption ">
+                    Welcome to Parallax
+                </div>
+                <div class="layers__title">
+                        Some Shop
+                </div>
+            </div>
+            <div class="layer layers__base" style="background-image: url(Parallax\ Images/test_1_base.png);"></div>
+            <div class="layer layers__middle" style="background-image: url(Parallax\ Images/test_1_middle.png);"></div>
+            <div class="layer layers__top" style="background-image: url(Parallax\ Images/test_1_top.png);"></div>
+            <div class="layer layers__front" style="background-image: url(Parallax\ Images/test_1_front.png);"></div>
+        </div>
+    </header>
+
     <div id="header"></div>
-    <div id="products"></div>
     <div id="shopping"></div>
+    <div id="products"></div>
 
     <!-- Constants and utils -->
     <script src="./Constants/catalog.js"></script>
     <script src="./Constants/root.js"></script>
     <script src="./Utils/localStorageUtil.js"></script>
+    <script src="./Parallax Images/parallax.js"></script>
     <!-- Header -->
     <script src="./Header/Header.js"></script>
     <link rel="stylesheet" href="./Header/Header.css">

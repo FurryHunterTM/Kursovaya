@@ -23,13 +23,18 @@ class Shopping{
             <div class = "shopping-container">
                 <div class="shopping__close" onclick="shoppingPage.handleClear()">
                 </div>
-                <table>
+                <div class = "korzinka">
+                <table >
                     ${htmlCatalog}
-                    <tr>
-                        <td class = "shopping-element__name">Сумма:</td>
-                        <td class = "shopping-element__price">${sumCatalog.toLocaleString()} USD</td>
-                    </tr>
+
                 </table>
+                </div>
+                <div>
+                <tr>
+                <td class = "shopping-element__name">Сумма:</td>
+                <td class = "shopping-element__price">${sumCatalog.toLocaleString()} USD</td>
+                </tr>
+                </div>
             </div>
         `;
         ROOT_SHOPPING.innerHTML = html;

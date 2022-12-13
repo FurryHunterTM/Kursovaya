@@ -38,14 +38,13 @@ class products {
                     <span class ="products-element__price">
                         ${price.toLocaleString()} USD
                     </span>
-                    <button class ="products-element__btn${activeClass}" onclick="productsPage.hadeleSetLocationStorage(this, '${id}')">
+                    <button class ="products-element__btn${activeClass}" onclick="productsPage.hadeleSetLocationStorage(this, '${id}'); checkBasket()">
                     ${activeText}
                     </button>
                 </li>
             `;
-
-        })
-
+        });
+        
         const html = `
             <ul class ="products-container">
                 ${htmlCatalog}
@@ -54,7 +53,12 @@ class products {
 
         ROOT_PRODUCTS.innerHTML = html;
     }
+    
 }
-
+function checkBasket(){
+    if(ROOT_SHOPPING.innerHTML!=''){
+        headerPage.handlerOpenShoppingPage();
+    }
+}
 const productsPage = new products();
 productsPage.render();
