@@ -10,21 +10,54 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
 </head>
 <body>
-    <div id="LK_header"></div>
+    <div id="LK_header">
+        <div class="LK_header-container">
+            <div id = "LK_sidebar">
+                <div class = "LK_toggle-btn" onclick="LK_openMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul>
+                <li>Личный кабинет</li>
+                    <li><a href="/">Главная</a></li>
+                    <li><a onclick="headerPage.handlerOpenShoppingPage();">Корзина</a></li>
+                    <li>История заказов</li>
+                    <li>Настроить профиль</li>
+                    <li>Выйти</li>
+                </ul>
+
+            </div>
+            Welcome to Some Shop
+
+        </div>
+    </div>
     <div id = "main-kabinet">
-        
+        <div class = "Profile" >
+            <div class = "user__data" >
+                IMAGE
+                <img class ="user-element__img" src = "${USERS[this.i].img}"/>
+            </div>
+            <div class = "user__data"> Личные Данные
+                <div class = "user__FIO"> 
+                    <span >Фамилия:<input class="text-field__input" value="${FIO[1]}" readonly> </span>
+                    <span >Имя: <input class="text-field__input" value="${FIO[0]}" readonly></span>
+                    <span >Отчество: <input class="text-field__input" value="${FIO[2]}" readonly> </span>
+                    <span >Почта: <input class="text-field__input" value="${FIO[2]}" readonly> </span>
+                    <span >Пароль: <input class="text-field__input" value="${FIO[2]}" readonly> </span>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- Constants and utils -->
-    <script src="./Constants/root.js"></script>
-    <script src="./Constants/users.js"></script>
+
     <!-- Header -->
-    <script src="./Header/Header.js"></script>
+
     <link rel="stylesheet" href="./Header/Header.css">
 
     <!-- User -->
-    <script src="./LK/LK.js"></script>
+
     <!-- Shopping -->
-    <script src="./Shopping/Shopping.js"></script>
     <link rel="stylesheet" href="./Shopping/Shopping.css">
 </body>
 </html>

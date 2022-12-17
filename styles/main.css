@@ -18,6 +18,10 @@
       0 16px 24px 2px rgba(197, 214, 158, 0.795),
       0 6px 30px 5px hsla(49, 72%, 52%, 0.74),
       0 8px 10px -5px hsla(49, 72%, 52%, 0.74);
+    --box-shadow-dark:
+    0 16px 24px 2px rgba(24, 23, 23, 0.795),
+    0 6px 30px 5px hsla(0, 21%, 71%, 0.74),
+    0 8px 10px -5px hsla(0, 0%, 0%, 0.74);
 }
 
 * {
@@ -105,10 +109,11 @@ body {
 }
 #main-kabinet{
   background-color: var(--color-white);
-  width: 80%;
+  width: 60%;
   max-width: 1300px;
-  height: 90vh;
-  margin: var(--spacing-large) auto;
+  height: 95vh;
+  margin-left: 30%;
+  margin-top: 2vh;
   box-shadow:var(--box-shadow);
   border-radius: var(--border-radius);
 }
@@ -128,17 +133,18 @@ body {
   width: max(90%,330px ) ;
   margin: 30px 30px 30px 30px;
   border-radius: 15px;
+  box-shadow:var(--box-shadow-dark);
 }
 .user__FIO{
   width: 70%;
   color: black;
   white-space: pre-line;
-  line-height: 50px;
+  line-height: 60px;
   text-align: right;
   font-size: 20px;
 }
 .text-field__input {
-  width: max(50%, 180px);
+  width: max(50%, 160px);
   padding: 0.375rem 0.75rem;
   font-family: inherit;
   font-size: 1rem;
@@ -163,9 +169,8 @@ body {
   font-style: italic;
   font-size: var(--spacing-large);
   text-align: center;
-
-
 }
+
 #LK_sidebar{
   position: absolute;
   top: -10px;
@@ -174,9 +179,10 @@ body {
   padding-right: 50px;
   background: var(--color-white);
   border-radius: var(--border-radius);
-  left: -350px;
+  left: 0px;
   color: #000000;
-
+  z-index: 3;
+  box-shadow:var(--box-shadow);
   -moz-transition: all 600ms;
   -webkit-transition: all 600ms;
   transition: all 600ms;
@@ -201,6 +207,12 @@ body {
   font-size: 0.5em;
   list-style: none;
   padding: 15px 10px;
+  border-color: #000000;
+}
+#LK_Settings {
+  border: 0.5rem solid #b4b4b4;
+  border-radius: 30px;
+  font-size: 30px;
 }
 #LK_sidebar ul li a{
   color: #000000;
@@ -220,8 +232,7 @@ body {
   border-radius: 12px;
   cursor: pointer;
 }
-#LK_sidebar .LK_toggle-btn:hover{background: #586269;}
-#LK_sidebar .LK_toggle-btn:hover span{background: #ced6db;}
+
 #LK_sidebar .LK_toggle-btn span{
   display: block;
   width: 25px;
@@ -233,7 +244,7 @@ body {
   left: 50%;
 }
 /* different screen sizes */
-@media screen and (max-width: 1020px){
+@media screen and (max-width: 1240px){
   .user__data{
     width: 100%;
     float: left;
@@ -242,7 +253,6 @@ body {
     position:  sticky;
 
   }
-
   .user-element__img{
     max-width: 90%;
     width: 600px;
@@ -250,8 +260,9 @@ body {
   }
   #main-kabinet{
     background-color: var(--color-white);
-    width: 80%;
-    height: 100vh;
+    width: 70%;
+    height: 150vh;
+    margin: var(--spacing-large) auto;
     box-shadow:var(--box-shadow);
     border-radius: var(--border-radius);
   }
@@ -266,12 +277,13 @@ body {
 
     }
     #LK_sidebar .LK_toggle-btn span{
-  
         width: 100%;
         height: 20%;
         border-radius: 15px;
         margin: 10px 0px;
     }
+    #LK_sidebar .LK_toggle-btn:hover{background: #586269;}
+    #LK_sidebar .LK_toggle-btn:hover span{background: #ced6db;}
     #LK_sidebar{
         position: absolute;
         top: -2px;
@@ -288,6 +300,9 @@ body {
         -webkit-transition: all 600ms;
         transition: all 600ms;
     }
+    #LK_Settings {
+      font-size: 50px
+    }
     .user__FIO{
       font-size: var(--smaller_font-size);
       width: 80%;
@@ -297,4 +312,21 @@ body {
       width: max(50%,350px);
     }
   
+}
+
+
+/* Oplata page css */
+#main-Oplata{
+  background-color: var(--color-white);
+  width: 60%;
+  max-width: 1300px;
+  height: 95vh;
+  margin-left: 30%;
+  margin-top: 2vh;
+  box-shadow:var(--box-shadow);
+  border-radius: var(--border-radius);
+}
+.Basket{
+  width: 100%;
+  height: 300px;
 }

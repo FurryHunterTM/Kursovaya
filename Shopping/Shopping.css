@@ -12,7 +12,7 @@
 	box-shadow: var(--box-shadow);
 	border-radius: var(--border-radius);
 
-	z-index: 0;
+	z-index: 2;
 }
 .korzinka{
 	margin-top: 30px;

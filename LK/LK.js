@@ -13,6 +13,8 @@ class LK{
                     <span >Фамилия:<input class="text-field__input" value="${FIO[1]}" readonly> </span>
                     <span >Имя: <input class="text-field__input" value="${FIO[0]}" readonly></span>
                     <span >Отчество: <input class="text-field__input" value="${FIO[2]}" readonly> </span>
+                    <span >Почта: <input class="text-field__input" value="${FIO[2]}" readonly> </span>
+                    <span >Пароль: <input class="text-field__input" value="${FIO[2]}" readonly> </span>
                 </div>
             </div>
         </div>
@@ -25,9 +27,6 @@ const userPage = new LK();
 userPage.render();
 
 class LK_Header {
-    handlerOpenShoppingPage(){
-        LK_shoppingPage.render();
-    }
     render(){
         const html = `
             <div class="LK_header-container">
@@ -38,10 +37,12 @@ class LK_Header {
                         <span></span>
                     </div>
                     <ul>
-                        <li>Меню</li>
-                        <li><a href="./auth.html">Личный кабинет</a></li>
-                        <li><a onclick="headerPage.handlerOpenShoppingPage();">Корзина</a></li>
+                    <li>Личный кабинет</li>
                         <li><a href="/">Главная</a></li>
+                        <li><a onclick="headerPage.handlerOpenShoppingPage();">Корзина</a></li>
+                        <li>История заказов</li>
+                        <li>Настроить профиль</li>
+                        <li>Выйти</li>
                     </ul>
 
                 </div>
