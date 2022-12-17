@@ -30,20 +30,12 @@
 
     <div id="header">
         <div class="header-container">
-            <div id = "sidebar">
-                <div class = "toggle-btn" onclick="openMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <div class = "toggle-btn" id="leftbar" onclick="location.href='auth.html';">
                 </div>
-                <ul>
-                    <li>Меню</li>
-                    <li><a href="./auth.html">Личный кабинет</a></li>
-                    <li><a onclick="headerPage.handlerOpenShoppingPage();">Корзина</a></li>
-                    <li><a href="/">Главная</a></li>
-                </ul>
+                <div class = "toggle-btn" id="rightbar" onclick="location.href='Oplata.html';">
 
-            </div>
+                </div>
+
             Welcome to Some Shop
 
         </div>
@@ -80,21 +72,22 @@
                 ${activeText}
                 </button>
             </li>
+
         </ul>
     </div>
 
     <!-- Constants and utils -->
-
+    <script src="./Parallax Images/parallax.js"></script>
     <!-- Header -->
 
     <link rel="stylesheet" href="./Header/Header.css">
 
     <!-- Products -->
-
     <link rel="stylesheet" href="./Products/Products.css">
 
     <!-- Shopping -->
-
+    <script src="./Shopping/Shopping.js"></script>
+    <script src="./Header/Header.js"></script>
     <link rel="stylesheet" href="./Shopping/Shopping.css">
 </body>
 </html>

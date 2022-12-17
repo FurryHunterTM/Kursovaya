@@ -25,7 +25,8 @@ class LK{
 }
 const userPage = new LK();
 userPage.render();
-
+function OpenLK(){
+}
 class LK_Header {
     render(){
         const html = `
