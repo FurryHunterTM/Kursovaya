@@ -55,10 +55,5 @@ class products {
     }
     
 }
-function checkBasket(){
-    if(ROOT_SHOPPING.innerHTML!=''){
-        headerPage.handlerOpenShoppingPage();
-    }
-}
+
 const productsPage = new products();
-productsPage.render();

@@ -243,6 +243,18 @@ body {
   background-size: contain;
   cursor: pointer;
 }
+.LogOutButton{
+  background-image: url(../assets/exit.png);
+  width: 65px;
+  height: 65px;
+  float: right;
+  border-radius: 10px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  cursor: pointer;
+}
 /* Oplata page css */
 #main-Oplata{
   background-color: var(--color-white);
@@ -410,9 +422,6 @@ body {
         -webkit-transition: all 600ms;
         transition: all 600ms;
     }
-    #LK_Settings {
-      font-size: 50px
-    }
     .user__FIO{
       font-size: var(--smaller_font-size);
       width: 80%;
@@ -421,6 +430,7 @@ body {
       font-size: calc( var(--smaller_font-size));
       width: max(50%,350px);
     }
+    
     .Payment{
       width: 50%;
       max-width: 500px;
