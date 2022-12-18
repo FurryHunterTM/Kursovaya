@@ -77,18 +77,22 @@ body {
   z-index: 2;
 }
 .layers__base{
+  background-image: url(../Parallax\ Images/test_1_base.png);
   transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
   z-index: 3;
 }
 .layers__top{
+  background-image: url(../Parallax\ Images/test_1_top.png);
   transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
   z-index: 4;
 }
 .layers__middle{
+  background-image: url(../Parallax\ Images/test_1_middle.png);
   transform: translate3d(0, calc(var(--scrollTop) / 2.3), 0);
   z-index: 5;
 }
 .layers__front{
+  background-image: url(../Parallax\ Images/test_1_front.png);
   transform: translate3d(0, calc(var(--scrollTop) / 3), 0);
   z-index: 6;
 }
