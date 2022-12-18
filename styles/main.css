@@ -121,6 +121,24 @@ body {
   box-shadow:var(--box-shadow);
   border-radius: var(--border-radius);
 }
+.btn__close{
+  background-image: url(../assets/close.png);
+  width: 30px;
+  height: 100%;
+  background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	cursor: pointer;
+}
+.btn__set{
+  background-image: url(../assets/wrench.png);
+  width: 30px;
+  height: 100%;
+  background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	cursor: pointer;
+}
 .Profile{
   height: 100%;
 }
