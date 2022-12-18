@@ -12,20 +12,9 @@
 <body>
     <div id="Oplata_header">
         <div class="LK_header-container">
-            <div id = "LK_sidebar">
-                <div class = "LK_toggle-btn" onclick="LK_openMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <ul>
-                <li>Корзина</li>
-                    <li><a href="/">Главная</a></li>
-                    <li><a onclick="headerPage.handlerOpenShoppingPage();">Личный кабинет</a></li>
-                    <li>История заказов</li>
-                    <li>Настроить профиль</li>
-                    <li>Выйти</li>
-                </ul>
+            <div class = "toggle-btn" id="OPLATA_leftbar" onclick="location.href='index.html';">
+            </div>
+            <div class = "toggle-btn" id="OPLATA_rightbar" onclick="location.href='auth.html';">
 
             </div>
             Welcome to Some Shop
@@ -34,12 +23,68 @@
         
     </div>
     <div id = "main-Oplata">
-        <div class = "Basket">
-            hello
+
+            Ваша корзина:
+            <div class = "shopping-container">
+                <div class = "korzinka">
+                <table >
+                    <tr>
+                        <td class = "shopping-element__name">${name}</td>
+                        <td class = "shopping-element__price">${price.toLocaleString()} USD</td>
+                    </tr>
+                    <tr>
+                        <td class = "shopping-element__name">${name}</td>
+                        <td class = "shopping-element__price">${price.toLocaleString()} USD</td>
+                    </tr>
+                    <tr>
+                        <td class = "shopping-element__name">${name}</td>
+                        <td class = "shopping-element__price">${price.toLocaleString()} USD</td>
+                    </tr>
+                    <tr>
+                        <td class = "shopping-element__name">${name}</td>
+                        <td class = "shopping-element__price">${price.toLocaleString()} USD</td>
+                    </tr>
+                    <tr>
+                        <td class = "shopping-element__name">${name}</td>
+                        <td class = "shopping-element__price">${price.toLocaleString()} USD</td>
+                    </tr>
+                    <tr>
+                        <td class = "shopping-element__name">${name}</td>
+                        <td class = "shopping-element__price">${price.toLocaleString()} USD</td>
+                    </tr>
+                    <tr>
+                        <td class = "shopping-element__name">${name}</td>
+                        <td class = "shopping-element__price">${price.toLocaleString()} USD</td>
+                    </tr>
+                    <tr>
+                        <td class = "shopping-element__name">${name}</td>
+                        <td class = "shopping-element__price">${price.toLocaleString()} USD</td>
+                    </tr>
+                    <tr>
+                        <td class = "shopping-element__name">${name}</td>
+                        <td class = "shopping-element__price">${price.toLocaleString()} USD</td>
+                    </tr>
+                    <tr>
+                        <td class = "shopping-element__name">${name}</td>
+                        <td class = "shopping-element__price">${price.toLocaleString()} USD</td>
+                    </tr>
+                </table>
+                </div>
+                <div>
+                <tr>
+                <td class = "shopping-element__name">Сумма:</td>
+                <td class = "shopping-element__price">${sumCatalog.toLocaleString()} USD</td>
+                </tr>
+                </div>
+            </div>
+            <div class="Payment" onclick="location.href='auth.html';">
+                Оплатить
             </div>
     </div>
     <!-- Constants and utils -->
     <!-- Oplata -->
+    <link rel="stylesheet" href="./Shopping/Shopping.css">
+
 </body>
 </html>
 

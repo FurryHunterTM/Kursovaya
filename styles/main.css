@@ -113,10 +113,10 @@ body {
 }
 #main-kabinet{
   background-color: var(--color-white);
-  width: 60%;
+  width: 70%;
   max-width: 1300px;
   height: 95vh;
-  margin-left: 30%;
+  margin-left: 15%;
   margin-top: 2vh;
   box-shadow:var(--box-shadow);
   border-radius: var(--border-radius);
@@ -192,45 +192,6 @@ body {
   font-size: var(--spacing-large);
   text-align: center;
 }
-
-#LK_sidebar{
-  position: absolute;
-  top: -10px;
-  width: 350px;
-  height: 110vh;
-  padding-right: 50px;
-  background: var(--color-white);
-  border-radius: var(--border-radius);
-  left: 0px;
-  color: #000000;
-  z-index: 3;
-  box-shadow:var(--box-shadow);
-  -moz-transition: all 600ms;
-  -webkit-transition: all 600ms;
-  transition: all 600ms;
-}
-
-#LK_sidebar.active{
-  left:0px;
-  box-shadow:var(--box-shadow);
-}
-
-
-#LK_sidebar ul li:first-child{
-  text-align: center;
-  color: #000000;
-  font-size: 1em;
-  list-style: none;
-  padding: 25px 10px 10px 10px;
-}
-#LK_sidebar ul li:not(:first-child){
-  width: 90%;  
-  margin-left: 10%;
-  font-size: 0.5em;
-  list-style: none;
-  padding: 15px 10px;
-  border-color: #000000;
-}
 #LK_Settings {
   border: 0.5rem solid #b4b4b4;
   border-radius: 30px;
@@ -245,25 +206,102 @@ body {
   cursor: pointer;
 }
 
-#LK_sidebar .LK_toggle-btn{
-  position: absolute;
-  top: 25px;
-  left: 370px;
-  background: #E0E5EA;
-  padding:10px ;
-  border-radius: 12px;
+#LK_leftbar{
+  float: left;
+  top: 10px;
+  height: 100%;
+  min-width: 80px;
+  padding-right: 50px;
+  background: #d8d6d6;
+  border-radius: var(--border-radius);
+  left: 0px;
+  text-align: center;
+  padding: var(--spacing-small);
+  color: #000000;
+  z-index: 1;
+  background-image: url(../assets/Home.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
   cursor: pointer;
 }
-
-#LK_sidebar .LK_toggle-btn span{
-  display: block;
-  width: 25px;
-  height: 4px;
-  background-color: #666;
-  margin: 4px 0;
+#LK_rightbar{
+  top: 10px;
+  height: 100%;
+  min-width: 80px;
+  padding-right: 50px;
+  background: #d8d6d6;
+  border-radius: var(--border-radius);
+  left: 0px;
+  color: #000000;
+  z-index: 1;
+  float: right;
+  background-image: url(../assets/BW_BASKET.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  cursor: pointer;
 }
-.LK_shopping_basket{
-  left: 50%;
+/* Oplata page css */
+#main-Oplata{
+  background-color: var(--color-white);
+  width: 70%;
+  max-width: 1300px;
+  height: 98vh;
+  margin-left: 15%;
+  margin-top: 2vh;
+  box-shadow:var(--box-shadow);
+  border-radius: var(--border-radius);
+  font-size: 50px;
+}
+.Payment{
+  float: right;
+  margin-right: 30px;
+  width: 200px;
+  height: 60px;
+  color:#d8d6d6;
+  background-color: #000000;
+  border-radius: var(--border-radius);
+  text-align: center;
+  font-size: 35px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+#OPLATA_leftbar{
+  float: left;
+  top: 10px;
+  height: 100%;
+  min-width: 80px;
+  padding-right: 50px;
+  background: #d8d6d6;
+  border-radius: var(--border-radius);
+  left: 0px;
+  text-align: center;
+  padding: var(--spacing-small);
+  color: #000000;
+  z-index: 1;
+  background-image: url(../assets/Home.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  cursor: pointer;
+}
+#OPLATA_rightbar{
+  top: 10px;
+  height: 100%;
+  min-width: 80px;
+  padding-right: 50px;
+  background: #d8d6d6;
+  border-radius: var(--border-radius);
+  left: 0px;
+  color: #000000;
+  z-index: 1;
+  float: right;
+  background-image: url(../assets/Profile.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  cursor: pointer;
 }
 /* different screen sizes */
 @media screen and (max-width: 1240px){
@@ -333,22 +371,9 @@ body {
       font-size: calc( var(--smaller_font-size));
       width: max(50%,350px);
     }
-  
-}
-
-
-/* Oplata page css */
-#main-Oplata{
-  background-color: var(--color-white);
-  width: 60%;
-  max-width: 1300px;
-  height: 95vh;
-  margin-left: 30%;
-  margin-top: 2vh;
-  box-shadow:var(--box-shadow);
-  border-radius: var(--border-radius);
-}
-.Basket{
-  width: 100%;
-  height: 300px;
+    .Payment{
+      width: 50%;
+      max-width: 500px;
+      height: 100px;
+    }
 }
